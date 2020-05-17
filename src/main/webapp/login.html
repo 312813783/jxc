@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+<title>欢迎使用-进销存管理系统-首页</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<link rel="shortcut icon" href="static/favicon.ico">
+<!-- flexslider-css-file -->
+<link rel="stylesheet" href="static/css/flexslider.css" type="text/css"
+	media="screen" property="" />
+<!-- //flexslider-css-file -->
+
+<link rel="stylesheet" href="static/css/easy-responsive-tabs.css">
+
+<link href="static/css/font-awesome.css" rel="stylesheet">
+<!-- font-awesome icons-css-file -->
+<link href="static/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<!-- bootstrap-css-file -->
+<link href="static/css/style1.css" type="text/css" rel="stylesheet" media="all">
+<!-- style-css-file -->
+
+
+<!-- gallery -->
+<link rel="stylesheet" href="static/css/lightbox.css">
+<!-- //gallery -->
+
+<!-- fonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Cinzel:400,700,900" rel="stylesheet">
+<!-- //fonts -->
+
+<!-- Default-JavaScript-File -->
+<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+<!-- //Default-JavaScript-File -->
+
+<script src="static/js/bootstrap.js"></script>
+<!-- //bootstrap-JavaScript-File -->
+<script src="static/js/jquery.js"></script>
+<script src="static/static/js/verifyCode.js"></script>
+<script src="static/static/js/Particleground.js"></script>
+<script src="static/js/jquery.min.js?v=2.1.4"></script>
+<script src="static/js/bootstrap.min.js?v=3.3.5"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
+<link rel="shortcut icon" href="favicon.ico">
+<link href="css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+<link href="static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+<link href="static/css/animate.min.css" rel="stylesheet">
+<link href="static/css/style.min.css?v=4.0.0" rel="stylesheet">
+<base target="_blank">
+<script>
+	if (window.top !== window.self) {
+		window.top.location = window.location;
+	}
+</script>
+</head>
+<!-- Head -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+	<div class="w3labout-img boxw3-agile">
+		<div id="home" class="w3ls-banner">
+			<!-- header -->
+			<div class="header-w3layouts">
+				<!-- Navigation -->
+				<nav class="navbar navbar-default navbar-fixed-top">
+					<div class="container">
+						<div class="navbar-header page-scroll">
+							<button type="button" class="navbar-toggle"
+								data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Medical_care</span> 
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span> 
+								<span class="icon-bar"></span>
+							</button>
+							<h1>
+								<a class="navbar-brand" href="index.html">Medical management system</a>
+							</h1>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse"></div>
+					</div>
+				</nav>
+			</div>
+			<div class="w3l_banner_info">
+				<div class="col-md-5 banner-form-agileinfo">
+					<img src="static/images/medical.png" alt="" />
+				</div>
+				<div class="col-md-7 slider">
+					<div class="callbacks_container">
+						<ul class="rslides" id="slider3">
+							<li>
+								<div class="slider_banner_info">
+									<h4>WE make healthy</h4>
+									<p>Medical school education and post graduate education
+										empha -size thoroughness.The good physician treats the
+										disease, great physician treats the patient who has the
+										disease.</p>
+								</div>
+
+							</li>
+							<li>
+								<div class="slider_banner_info">
+									<h4>Medicine is a science</h4>
+									<p>The best doctor is the one you run to and can't find.We
+										should be concerned not only about the health of individual
+										patients, but also the health of our entire society.</p>
+								</div>
+
+							</li>
+							<li>
+								<div class="slider_banner_info">
+									<h4>Nothing cures health</h4>
+									<p>Never go to a doctor whose office plants have died.You
+										know what they call the fellow who finishes last in his
+										medical school graduating class? They call him 'Doctor.</p>
+								</div>
+
+							</li>
+							<li>
+								<div class="slider_banner_info">
+									<h4>We do best treatment</h4>
+									<p>Time is generally the best doctor.so well choose your
+										best doctor before time lossesThe art of medicine consists in
+										amusing the patient while nature cures the disease.</p>
+								</div>
+
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="agile-caption">
+			<div class="middle-box text-center loginscreen  animated fadeInDown">
+				<div>
+					<h3>欢迎登录使用</h3>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="用户名" id="userName" style="color: black;" required="">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="密码" id="password" style="color: black;" required="">
+					</div>
+					<button type="button" id="loginBtn" class="btn btn-primary block full-width m-b">登 录</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="copyright-agile">
+		<p>
+			Copyright &copy; 2020.Company name All rights Tangshan teachers college <a href="http://www.tstc.edu.cn/" target="_blank" title=""></a>
+		</p>
+	</div>
+	<!-- //copyright -->
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			$("#loginBtn").click(function() {
+												
+				$.post("/user/login",{userName : 
+					$("#userName").val(),password : $("#password").val(),imageCode : '1'},
+							function(result) {if (result.success) {
+										if (result.roleSize == 1) {
+											var roleId = result.roleList[0].id;
+														$.post("/user/saveRole",
+																		{roleId : roleId},
+													function(result) {if (result.success) {window.location.href = "/main.html";
+																			}});
+													} else {
+														$("#roleList").empty();
+														var roles = result.roleList;
+														for (var i = 0; i < roles.length; i++) {
+															if (i == 0) {$("#roleList").append(
+																"<input type='radio' checked=true  name='role' value='"+roles[i].id+"'/>"
+																						+ roles[i].name
+																						+ "&nbsp;&nbsp;")
+
+															} else {
+																$(
+																		"#roleList")
+																		.append(
+																				"<input type='radio' name='role' value='"+roles[i].id+"'/>"
+																						+ roles[i].name
+																						+ "&nbsp;&nbsp;")
+															}
+														}
+														document.getElementById('light').style.display = 'block';
+														document.getElementById('fade').style.display = 'block';
+													}
+												} else {
+													alert(result.errorInfo);
+												}
+											});
+						});
+	});
+
+		function saveRole() {
+			var roleId = $("input[name='role']:checked").val();
+			$.post("/user/saveRole", {
+				roleId : roleId
+			}, function(result) {
+				if (result.success) {
+					window.location.href = "/main.html";
+				}
+			});
+		}
+	</script>
+
+	<script src="static/js/easy-responsive-tabs.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#horizontalTab').easyResponsiveTabs({
+				type : 'default', //Types: default, vertical, accordion           
+				width : 'auto', //auto or any width like 600px
+				fit : true, // 100% fit in a container
+				closed : 'accordion', // Start closed if in accordion view
+				activate : function(event) { // Callback function if tab is switched
+					var $tab = $(this);
+					var $info = $('#tabInfo');
+					var $name = $('span', $info);
+					$name.text($tab.text());
+					$info.show();
+				}
+			});
+			$('#verticalTab').easyResponsiveTabs({
+				type : 'vertical',
+				width : 'auto',
+				fit : true
+			});
+		});
+	</script>
+
+
+	<!--banner Slider starts Here-->
+	<script src="static/js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function() {
+			// Slideshow 4
+			$("#slider3").responsiveSlides({
+				auto : true,
+				pager : true,
+				nav : false,
+				speed : 500,
+				namespace : "callbacks",
+				before : function() {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after : function() {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+
+	<!--banner Slider starts Here-->
+	<!--start-date-piker-->
+	<link rel="stylesheet" href="static/css/jquery-ui.css" />
+	<script src="js/jquery-ui.js"></script>
+	<script>
+		$(function() {
+			$("#datepicker").datepicker();
+		});
+	</script>
+	<!--/End-date-piker-->
+
+	<!-- js for smooth scrollings -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<!-- js for smooth scrollings -->
+
+	<!-- flexisel -->
+	<script type="text/javascript" src="static/js/jquery.flexisel.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo1").flexisel({
+				visibleItems : 3,
+				animationSpeed : 1000,
+				autoPlay : false,
+				autoPlaySpeed : 3000,
+				pauseOnHover : true,
+				enableResponsiveBreakpoints : true,
+				responsiveBreakpoints : {
+					portrait : {
+						changePoint : 480,
+						visibleItems : 1
+					},
+					landscape : {
+						changePoint : 640,
+						visibleItems : 2
+					},
+					tablet : {
+						changePoint : 768,
+						visibleItems : 3
+					}
+				}
+			});
+
+		});
+	</script>
+	<!-- //flexisel -->
+
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="static/js/move-top.js"></script>
+	<script type="text/javascript" src="static/js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop : $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			 */
+
+			$().UItoTop({
+				easingType : 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+
+
+	<!-- Scrolling Nav JavaScript -->
+	<script src="static/js/scrolling-nav.js"></script>
+	<!-- //fixed-scroll-nav-js -->
+</body>
+</html>
